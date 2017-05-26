@@ -1,0 +1,50 @@
+<!--
+	File Name - dbCRUD2.php
+	Database CRUD Operations
+-->
+
+<html>
+<body>
+	<form method="POST" action="crud.php">
+		<table border="1" align="center">
+			<tr>
+				<td>Id</td>
+				<td><input type="text" name="txtId"></td>
+			</tr>
+			<tr>
+				<td>pic</td>
+				<td><input type="text" name="pic1"></td>
+			</tr>
+			<tr>
+				<td>Name</td>
+				<td><input type="text" name="txtName"></td>
+			</tr>
+			<tr>
+				<td>Age</td>
+				<td>
+					<select name="lstAge">
+						<?php
+							for($i=18; $i<=60; $i++)
+							{
+								echo "<option>$i</option>";
+							}
+						?>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td  colspan='2'>
+					<input type="submit" name="btnAdd" value="Add Record">&nbsp;&nbsp;
+					<input type="submit" name="btnUpdate" value="Update Password">&nbsp;&nbsp;
+					<input type="submit" name="btnDelete" value="Delete Record">&nbsp;&nbsp;
+					<input type="submit" name="btnDisplayById" value="Display Record By ID">&nbsp;&nbsp;
+					<input type="submit" name="btnDisplayAll" value="Display All Records">&nbsp;&nbsp;
+				</td>
+			</tr>
+	</form>
+
+
+</body>
+</html>
+	
+
