@@ -9,7 +9,7 @@
 	<?php
 	
 	
-	require("dbconfig2.php");
+	require("dbConfig2.php");
 
 	 
 
